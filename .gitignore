@@ -22,3 +22,6 @@ yarn-error.log*
 
 # config
 src/config.json
+
+# intellij config
+.idea

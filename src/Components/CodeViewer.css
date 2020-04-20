@@ -50,4 +50,8 @@ pre,
     width: 100vw;
     word-wrap: break-word;
   }
+
+  .error {
+    font-size: 16px;
+  }
 }

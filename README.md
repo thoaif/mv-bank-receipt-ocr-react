@@ -56,6 +56,9 @@ Currently no tests have been implemented.
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
+
+The environment variable `ENDPOINT` must be defined for the build process to work.
+
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>

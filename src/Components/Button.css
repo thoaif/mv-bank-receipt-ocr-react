@@ -1,0 +1,44 @@
+.button {
+  padding: 12px 16px;
+  margin-right: 16px;
+  margin-left: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 250ms ease-in-out;
+}
+
+.button:active {
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.blue {
+  background: #007bff;
+}
+
+.blue:active,
+.blue:hover {
+  background: #0062cc;
+}
+
+.grey {
+  background: #6c757d;
+}
+
+.grey:active,
+.grey:hover {
+  background: #5a6268;
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}

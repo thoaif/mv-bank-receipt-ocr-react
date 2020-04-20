@@ -1,0 +1,53 @@
+pre,
+.errorContainer {
+  text-align: left;
+  font-size: 16px;
+  color: #999;
+  background: #eee;
+  padding: 1em;
+  border-radius: 8px;
+  line-height: 24px;
+  font-weight: bold;
+  min-width: 50vw;
+  min-height: 30vh;
+  max-width: 100vw;
+  margin-bottom: 20px;
+}
+
+.string {
+  color: #690;
+}
+
+.key {
+  color: #905;
+}
+
+.null {
+  color: #07a;
+}
+
+.number {
+  color: #07a;
+}
+
+.error {
+  color: #e33230;
+  font-size: 24px;
+}
+
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+  pre,
+  .errorContainer {
+    font-size: 12px;
+    line-height: 18px;
+    width: 100vw;
+    word-wrap: break-word;
+  }
+}

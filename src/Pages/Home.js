@@ -6,10 +6,12 @@ import Button from '../Components/Button';
 import { useHistory } from 'react-router-dom';
 import { endpoint } from '../config.json';
 import styles from './Home.module.css';
+import usePing from '../hooks/ping';
 
 function Previews(props) {
   const [files, setFiles] = useState([]);
   const [status, setStatus] = useState(false);
+  usePing();
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     accept: 'image/*',
@@ -66,7 +68,7 @@ function Previews(props) {
     data.append('file', files[0]);
 
     try {
-      const results = await axios.post(endpoint, data, config);
+      const results = await axios.post(`${endpoint}/ocr`, data, config);
 
       history.push({
         pathname: '/results',

@@ -3,10 +3,12 @@ import React from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 import Button from '../Components/Button';
 import styles from './Results.module.css';
+import usePing from '../hooks/ping';
 
 const Results = (props) => {
   const location = useLocation();
   const history = useHistory();
+  usePing();
 
   let results = 'No results from server. Please Try again';
   let error = true;
